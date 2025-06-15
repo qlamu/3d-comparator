@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+#canvasContainer {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    #canvasContainer {
+        max-height: 50vh;
+    }
+}
+
+/* Custom style for color picker to fix alignment */
+input[type="color"] {
+    padding: 0;
+    height: 40px;
+}
+.sortable-ghost {
+    opacity: 0.5;
+    background: #cbd5e0;
+}
+.sortable-chosen {
+    opacity: 0.8;
+    background: #a0aec0;
+}
+
+/* Add some basic styles to handle scrollbars and other elements */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+@media (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-track {
+        background: #2d3748;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #4a5568;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #718096;
+    }
+}
